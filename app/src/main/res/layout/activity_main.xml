@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="115dp">
+
+        <!-- Conjunto para X -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo Magnético X" />
+
+            <ProgressBar
+                android:id="@+id/progressBarX"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressDrawable="@drawable/custom_progressbar" />
+
+            <TextView
+                android:id="@+id/lastValueX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Último X: 0.0"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Conjunto para Y -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo Magnético Y" />
+
+            <ProgressBar
+                android:id="@+id/progressBarY"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressDrawable="@drawable/custom_progressbar" />
+
+            <TextView
+                android:id="@+id/lastValueY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Último Y: 0.0"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Conjunto para Z -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campo Magnético Z" />
+
+            <ProgressBar
+                android:id="@+id/progressBarZ"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progressDrawable="@drawable/custom_progressbar" />
+
+            <TextView
+                android:id="@+id/lastValueZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Último Z: 0.0"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

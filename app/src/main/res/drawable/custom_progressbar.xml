@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo de la barra de progreso -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dp" />
+            <solid android:color="#D3D3D3" />
+        </shape>
+    </item>
+    <!-- Progreso secundario (puede usarse para mostrar progreso intermedio) -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dp" />
+                <solid android:color="#FFC107" />
+            </shape>
+        </clip>
+    </item>
+    <!-- Progreso principal -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="5dp" />
+                <solid android:color="#4CAF50" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

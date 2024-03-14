@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MagneticField_JoseTrista</string>
+    <string name="magnetic_field_values">Campo Magnético:\nX: %1$.2f\nY: %2$.2f\nZ: %3$.2f</string>
+</resources>
